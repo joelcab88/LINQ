@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicationLINQTest", "AplicationLINQTest.csproj", "{B7DD6658-1527-49F9-84B7-74B782A3037F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7DD6658-1527-49F9-84B7-74B782A3037F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DD6658-1527-49F9-84B7-74B782A3037F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DD6658-1527-49F9-84B7-74B782A3037F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DD6658-1527-49F9-84B7-74B782A3037F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B1C6613-AD69-400F-945E-28C649AB330E}
+	EndGlobalSection
+EndGlobal
