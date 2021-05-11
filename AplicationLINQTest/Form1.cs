@@ -1,4 +1,5 @@
 ﻿using AplicationLINQTest.BO;
+using AplicationLINQTest.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,19 +22,11 @@ namespace AplicationLINQTest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dtgCategorias.DataSource = LoadCategorias();
+            ListaCategoriasDAO listaCategorias = new ListaCategoriasDAO();
+            dtgCategorias.DataSource = listaCategorias.LoadCategorias();
         }
 
 
-        private List<CategoriasBO> LoadCategorias()
-        {
-            lstCategotia = new List<CategoriasBO>();
-            lstCategotia.Add(new CategoriasBO { iIdCategoria = 1, cNombreCategoria = "Frutas" });
-            lstCategotia.Add(new CategoriasBO { iIdCategoria = 2, cNombreCategoria = "Verduras" });
-            lstCategotia.Add(new CategoriasBO { iIdCategoria = 3, cNombreCategoria = "Carnes frías" });
-            lstCategotia.Add(new CategoriasBO { iIdCategoria = 4, cNombreCategoria = "Limpieza" });
-            lstCategotia.Add(new CategoriasBO { iIdCategoria = 5, cNombreCategoria = "Higiene personal" });
-            return lstCategotia;
-        }
+        
     }
 }
