@@ -30,11 +30,11 @@
         {
             this.dgvCategorias = new System.Windows.Forms.DataGridView();
             this.gbFiltros = new System.Windows.Forms.GroupBox();
-            this.lblIdCategoria = new System.Windows.Forms.Label();
-            this.txtIdCategoria = new System.Windows.Forms.TextBox();
-            this.lblNombreCategoria = new System.Windows.Forms.Label();
             this.txtNombreCategoria = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.lblNombreCategoria = new System.Windows.Forms.Label();
+            this.txtIdCategoria = new System.Windows.Forms.TextBox();
+            this.lblIdCategoria = new System.Windows.Forms.Label();
+            this.btnIngresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.gbFiltros.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +49,7 @@
             // 
             // gbFiltros
             // 
-            this.gbFiltros.Controls.Add(this.btnBuscar);
+            this.gbFiltros.Controls.Add(this.btnIngresar);
             this.gbFiltros.Controls.Add(this.txtNombreCategoria);
             this.gbFiltros.Controls.Add(this.lblNombreCategoria);
             this.gbFiltros.Controls.Add(this.txtIdCategoria);
@@ -61,21 +61,12 @@
             this.gbFiltros.TabStop = false;
             this.gbFiltros.Text = "Filtros:";
             // 
-            // lblIdCategoria
+            // txtNombreCategoria
             // 
-            this.lblIdCategoria.AutoSize = true;
-            this.lblIdCategoria.Location = new System.Drawing.Point(7, 20);
-            this.lblIdCategoria.Name = "lblIdCategoria";
-            this.lblIdCategoria.Size = new System.Drawing.Size(86, 13);
-            this.lblIdCategoria.TabIndex = 0;
-            this.lblIdCategoria.Text = "Clave categoría:";
-            // 
-            // txtIdCategoria
-            // 
-            this.txtIdCategoria.Location = new System.Drawing.Point(99, 17);
-            this.txtIdCategoria.Name = "txtIdCategoria";
-            this.txtIdCategoria.Size = new System.Drawing.Size(123, 20);
-            this.txtIdCategoria.TabIndex = 1;
+            this.txtNombreCategoria.Location = new System.Drawing.Point(341, 17);
+            this.txtNombreCategoria.Name = "txtNombreCategoria";
+            this.txtNombreCategoria.Size = new System.Drawing.Size(246, 20);
+            this.txtNombreCategoria.TabIndex = 3;
             // 
             // lblNombreCategoria
             // 
@@ -86,21 +77,31 @@
             this.lblNombreCategoria.TabIndex = 2;
             this.lblNombreCategoria.Text = "Nombre categoría:";
             // 
-            // txtNombreCategoria
+            // txtIdCategoria
             // 
-            this.txtNombreCategoria.Location = new System.Drawing.Point(341, 17);
-            this.txtNombreCategoria.Name = "txtNombreCategoria";
-            this.txtNombreCategoria.Size = new System.Drawing.Size(246, 20);
-            this.txtNombreCategoria.TabIndex = 3;
+            this.txtIdCategoria.Location = new System.Drawing.Point(99, 17);
+            this.txtIdCategoria.Name = "txtIdCategoria";
+            this.txtIdCategoria.Size = new System.Drawing.Size(123, 20);
+            this.txtIdCategoria.TabIndex = 1;
             // 
-            // btnBuscar
+            // lblIdCategoria
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(607, 15);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.lblIdCategoria.AutoSize = true;
+            this.lblIdCategoria.Location = new System.Drawing.Point(7, 20);
+            this.lblIdCategoria.Name = "lblIdCategoria";
+            this.lblIdCategoria.Size = new System.Drawing.Size(86, 13);
+            this.lblIdCategoria.TabIndex = 0;
+            this.lblIdCategoria.Text = "Clave categoría:";
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Location = new System.Drawing.Point(603, 14);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(87, 23);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btningresa_Click);
             // 
             // DataGV
             // 
@@ -123,10 +124,10 @@
 
         private System.Windows.Forms.DataGridView dgvCategorias;
         private System.Windows.Forms.GroupBox gbFiltros;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtNombreCategoria;
         private System.Windows.Forms.Label lblNombreCategoria;
         private System.Windows.Forms.TextBox txtIdCategoria;
         private System.Windows.Forms.Label lblIdCategoria;
+        private System.Windows.Forms.Button btnIngresar;
     }
 }
