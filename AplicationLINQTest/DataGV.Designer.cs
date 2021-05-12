@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvCategorias = new System.Windows.Forms.DataGridView();
             this.gbFiltros = new System.Windows.Forms.GroupBox();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.txtNombreCategoria = new System.Windows.Forms.TextBox();
             this.lblNombreCategoria = new System.Windows.Forms.Label();
             this.txtIdCategoria = new System.Windows.Forms.TextBox();
             this.lblIdCategoria = new System.Windows.Forms.Label();
-            this.btnIngresar = new System.Windows.Forms.Button();
+            this.errorFormulario = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.gbFiltros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorFormulario)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCategorias
@@ -60,6 +63,16 @@
             this.gbFiltros.TabIndex = 1;
             this.gbFiltros.TabStop = false;
             this.gbFiltros.Text = "Filtros:";
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Location = new System.Drawing.Point(603, 14);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(87, 23);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btningresa_Click);
             // 
             // txtNombreCategoria
             // 
@@ -93,15 +106,9 @@
             this.lblIdCategoria.TabIndex = 0;
             this.lblIdCategoria.Text = "Clave categoría:";
             // 
-            // btnIngresar
+            // errorFormulario
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(603, 14);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(87, 23);
-            this.btnIngresar.TabIndex = 4;
-            this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.UseVisualStyleBackColor = true;
-            this.btnIngresar.Click += new System.EventHandler(this.btningresa_Click);
+            this.errorFormulario.ContainerControl = this;
             // 
             // DataGV
             // 
@@ -116,6 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
             this.gbFiltros.ResumeLayout(false);
             this.gbFiltros.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorFormulario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -129,5 +137,6 @@
         private System.Windows.Forms.TextBox txtIdCategoria;
         private System.Windows.Forms.Label lblIdCategoria;
         private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.ErrorProvider errorFormulario;
     }
 }

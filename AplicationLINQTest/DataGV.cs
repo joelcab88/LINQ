@@ -27,14 +27,42 @@ namespace AplicationLINQTest
 
         private void btningresa_Click(object sender, EventArgs e)
         {
-            ListaCategoriasDAO listaCategorias = new ListaCategoriasDAO();
-            CategoriasBO cat = new CategoriasBO();
-            cat.iIdCategoria = int.Parse(txtIdCategoria.Text);
-            cat.cNombreCategoria = txtNombreCategoria.Text;
-            var lst = listaCategorias.LoadCategorias();
-            lst.Add(cat);
-            dgvCategorias.DataSource = null;
-            dgvCategorias.DataSource = lst;
+            try
+            {
+                int iIdCategoria;
+                bool lFormatoValido = true;
+                lFormatoValido = int.TryParse(txtIdCategoria.Text, out iIdCategoria);
+                if (!lFormatoValido)
+                {
+                    errorFormulario.SetError(txtIdCategoria,"El valor ingresado en el campo no tiene el formato correcto, favor de validar.");
+                    return;
+                }
+                else if (txtNombreCategoria.Text.Equals(""))
+                {
+                    errorFormulario.SetError(txtNombreCategoria, "El valor ingresado en el campo no tiene el formato correcto, favor de validar.");
+                    return;
+                }
+                ListaCategoriasDAO listaCategorias = new ListaCategoriasDAO();
+                CategoriasBO cat = new CategoriasBO();
+                cat.iIdCategoria = iIdCategoria;
+                cat.cNombreCategoria = txtNombreCategoria.Text;
+                var lst = listaCategorias.LoadCategorias();
+                lst.Add(cat);
+                dgvCategorias.DataSource = null;
+                dgvCategorias.DataSource = lst;
+                LimpiaCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error: " + ex.Message);
+            }
+            
+        }
+
+        private void LimpiaCampos()
+        {
+            txtIdCategoria.Text = "";
+            txtNombreCategoria.Text = "";
         }
     }
 }
