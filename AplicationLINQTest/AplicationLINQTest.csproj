@@ -54,6 +54,18 @@
     <Compile Include="DataGV.Designer.cs">
       <DependentUpon>DataGV.cs</DependentUpon>
     </Compile>
+    <Compile Include="FiltroLINQSensitivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroLINQSensitivo.Designer.cs">
+      <DependentUpon>FiltroLINQSensitivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiltroLINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroLINQ.Designer.cs">
+      <DependentUpon>FiltroLINQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +76,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DataGV.resx">
       <DependentUpon>DataGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroLINQSensitivo.resx">
+      <DependentUpon>FiltroLINQSensitivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroLINQ.resx">
+      <DependentUpon>FiltroLINQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
