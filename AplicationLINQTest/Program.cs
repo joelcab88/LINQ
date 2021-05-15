@@ -16,7 +16,7 @@ namespace AplicationLINQTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FiltroLINQSensitivo());
+            Application.Run(new frmComboBox());
         }
     }
 }

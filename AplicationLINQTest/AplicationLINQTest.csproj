@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BO\CategoriasBO.cs" />
+    <Compile Include="BO\ProductosBO.cs" />
     <Compile Include="DAO\ListaCategoriasDAO.cs" />
+    <Compile Include="DAO\ListaProductosDAO.cs" />
     <Compile Include="DataGV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboBox.resx">
+      <DependentUpon>frmComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
