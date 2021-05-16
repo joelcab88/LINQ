@@ -47,14 +47,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BO\CategoriasBO.cs" />
+    <Compile Include="BO\EmpleadoBO.cs" />
     <Compile Include="BO\ProductosBO.cs" />
     <Compile Include="DAO\ListaCategoriasDAO.cs" />
+    <Compile Include="DAO\ListaEmpleados.cs" />
     <Compile Include="DAO\ListaProductosDAO.cs" />
     <Compile Include="DataGV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataGV.Designer.cs">
       <DependentUpon>DataGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoPractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoPractica.Designer.cs">
+      <DependentUpon>EmpleadoPractica.cs</DependentUpon>
     </Compile>
     <Compile Include="FiltroLINQSensitivo.cs">
       <SubType>Form</SubType>
@@ -84,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DataGV.resx">
       <DependentUpon>DataGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoPractica.resx">
+      <DependentUpon>EmpleadoPractica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FiltroLINQSensitivo.resx">
       <DependentUpon>FiltroLINQSensitivo.cs</DependentUpon>
