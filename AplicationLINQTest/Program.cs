@@ -16,7 +16,7 @@ namespace AplicationLINQTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmpleadoPractica());
+            Application.Run(new EmpleadoPractica3());
         }
     }
 }

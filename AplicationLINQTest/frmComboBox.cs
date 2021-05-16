@@ -25,7 +25,7 @@ namespace AplicationLINQTest
             ListaProductosDAO listaProductos = new ListaProductosDAO();
             var lst = lstCategorias.LoadCategorias();
             lst.Add(new CategoriasBO { iIdCategoria = -1, cNombreCategoria = "--SELECCIONE UN VALOR--" });
-            cmbValor.DataSource = lst.OrderBy(x => x.iIdCategoria).ToList();;
+            cmbValor.DataSource = lst.OrderBy(x => x.iIdCategoria).ToList();
             cmbValor.DisplayMember = "cNombreCategoria";
             cmbValor.ValueMember = "iIdCategoria";
 

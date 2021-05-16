@@ -48,9 +48,11 @@
   <ItemGroup>
     <Compile Include="BO\CategoriasBO.cs" />
     <Compile Include="BO\EmpleadoBO.cs" />
+    <Compile Include="BO\ModalidadBO.cs" />
     <Compile Include="BO\ProductosBO.cs" />
     <Compile Include="DAO\ListaCategoriasDAO.cs" />
     <Compile Include="DAO\ListaEmpleados.cs" />
+    <Compile Include="DAO\ListaModalidadDAO.cs" />
     <Compile Include="DAO\ListaProductosDAO.cs" />
     <Compile Include="DataGV.cs">
       <SubType>Form</SubType>
@@ -63,6 +65,18 @@
     </Compile>
     <Compile Include="EmpleadoPractica.Designer.cs">
       <DependentUpon>EmpleadoPractica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoPractica2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoPractica2.Designer.cs">
+      <DependentUpon>EmpleadoPractica2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoPractica3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoPractica3.Designer.cs">
+      <DependentUpon>EmpleadoPractica3.cs</DependentUpon>
     </Compile>
     <Compile Include="FiltroLINQSensitivo.cs">
       <SubType>Form</SubType>
@@ -95,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmpleadoPractica.resx">
       <DependentUpon>EmpleadoPractica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoPractica2.resx">
+      <DependentUpon>EmpleadoPractica2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoPractica3.resx">
+      <DependentUpon>EmpleadoPractica3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FiltroLINQSensitivo.resx">
       <DependentUpon>FiltroLINQSensitivo.cs</DependentUpon>
