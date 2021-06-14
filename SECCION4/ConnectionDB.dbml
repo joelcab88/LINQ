@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LINQ" Class="ConnectionDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-147FCBJT;Initial Catalog=LINQ;Integrated Security=True" SettingsObjectName="SECCION4.Properties.Settings" SettingsPropertyName="LINQConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Empleado" Member="Empleado">
+    <Type Name="Empleado">
+      <Column Name="iIdEmpleado" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cCodigoEmpleado" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="cNombreEmpleado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cApellidoPaterno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cApellidoMaterno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="iEdad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
