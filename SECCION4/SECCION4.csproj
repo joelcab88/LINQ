@@ -59,6 +59,12 @@
     <Compile Include="FiltroEmpleadosBTN.Designer.cs">
       <DependentUpon>FiltroEmpleadosBTN.cs</DependentUpon>
     </Compile>
+    <Compile Include="FiltroEmpleadoSensitivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroEmpleadoSensitivo.Designer.cs">
+      <DependentUpon>FiltroEmpleadoSensitivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </None>
     <EmbeddedResource Include="FiltroEmpleadosBTN.resx">
       <DependentUpon>FiltroEmpleadosBTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroEmpleadoSensitivo.resx">
+      <DependentUpon>FiltroEmpleadoSensitivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

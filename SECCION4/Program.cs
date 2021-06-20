@@ -16,7 +16,7 @@ namespace SECCION4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FiltroEmpleadosBTN());
+            Application.Run(new FiltroEmpleadoSensitivo());
         }
     }
 }
