@@ -53,6 +53,12 @@
       <DependentUpon>ConnectionDB.dbml</DependentUpon>
     </Compile>
     <Compile Include="DTO\EmpleadoDTO.cs" />
+    <Compile Include="FiltroEdadRangoEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroEdadRangoEmpleados.Designer.cs">
+      <DependentUpon>FiltroEdadRangoEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="FiltroEmpleadosBTN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <None Include="ConnectionDB.dbml.layout">
       <DependentUpon>ConnectionDB.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="FiltroEdadRangoEmpleados.resx">
+      <DependentUpon>FiltroEdadRangoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiltroEmpleadosBTN.resx">
       <DependentUpon>FiltroEmpleadosBTN.cs</DependentUpon>
     </EmbeddedResource>
