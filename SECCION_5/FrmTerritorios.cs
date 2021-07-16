@@ -27,6 +27,7 @@ namespace SECCION_5
             cmbRegion.ValueMember = "RegionID";
             iRegion = int.Parse(cmbRegion.SelectedValue.ToString());
             dgvTerritories.DataSource = getTerritories(iRegion);
+            lblCountRegistros.Text = getTerritories(iRegion).Count().ToString() + " Registro(s)";
         }
 
 
@@ -81,6 +82,7 @@ namespace SECCION_5
             int iRegion = 0;
             iRegion = int.Parse(cmbRegion.SelectedValue.ToString());
             dgvTerritories.DataSource = getTerritories(iRegion);
+            lblCountRegistros.Text = getTerritories(iRegion).Count().ToString() + " Registro(s)";
         }
     }
 }

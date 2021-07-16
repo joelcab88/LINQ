@@ -32,6 +32,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbRegion = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblCountRegistros = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTerritories)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -77,11 +79,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingresa región:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
+            // 
+            // lblCountRegistros
+            // 
+            this.lblCountRegistros.AutoSize = true;
+            this.lblCountRegistros.Location = new System.Drawing.Point(13, 456);
+            this.lblCountRegistros.Name = "lblCountRegistros";
+            this.lblCountRegistros.Size = new System.Drawing.Size(0, 17);
+            this.lblCountRegistros.TabIndex = 3;
+            // 
             // FrmTerritorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 485);
+            this.Controls.Add(this.lblCountRegistros);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvTerritories);
             this.Name = "FrmTerritorios";
@@ -91,6 +112,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -100,5 +122,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbRegion;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCountRegistros;
     }
 }
